@@ -1,0 +1,27 @@
+name: 'CDEvents Action'
+description: 'CDEvents'
+author: 'CDEvents Team'
+branding:
+  icon: 'rss'
+  color: 'green'
+inputs:
+  source:
+    description: 'Source'
+    required: true
+  subject_id:
+   description: Subject ID
+   required: true
+  subject_pipeline_name:
+   description: Subject Pipeline Name
+   required: true
+  subject_url:
+    description: Subject URL
+    required: true
+  version:
+    version:
+      description: 'CDEvents Action Version'
+      required:
+      default: 0.0.1
+runs:
+  using: 'docker'
+  image: './Dockerfile'
